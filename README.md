@@ -24,4 +24,14 @@
 - NetflixGPT 
     - Search Bar
     - Movie Suggestion
+
+
+
 # NETFLIX-GPT_1
+ - Create React App
+ - Configured TailwindCSS
+ - Header
+ - Login Form
+ -  Sngn Up form
+
+
