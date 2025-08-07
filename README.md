@@ -31,7 +31,26 @@
  - Create React App
  - Configured TailwindCSS
  - Header
+ - Routing of App
  - Login Form
- -  Sngn Up form
+ - Sngn Up form
+ - Form Validation
+ - useRef Hook
+ - Firebase Setup
+ - Deploying our app to production
+ - Create SignUp User Api
+ - Created Redux Store with userSlice
+ - Implemented Sign out
+ - Update Profile
+ - Fetch From TDM Movies
 
 
+npm install firebase
+npm install -g firebase-tools
+firebase login
+firebase init
+npm run build
+firebase deploy
+
+ # npm i -D @reduxjs/toolkit
+ # npm i react-redux
