@@ -42,7 +42,8 @@
  - Created Redux Store with userSlice
  - Implemented Sign out
  - Update Profile
- - Fetch From TDM Movies
+ - 
+
 
 
 npm install firebase

@@ -10,6 +10,7 @@ import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { USER_AVATAR } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignForm] = useState(true);
@@ -45,7 +46,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: nameRef.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/206165728?v=4",
+            photoURL: USER_AVATAR,
           })
             .then(() => {
               // Profile updated!
@@ -60,7 +61,7 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browse");
+             
             })
             .catch((error) => {
               // An error occurred
@@ -68,7 +69,7 @@ const Login = () => {
             });
           console.log("User signed up:", user);
           console.log("User signed Token:", user.accessToken);
-          navigate("/browse");
+        //  navigate("/browse");
           // ...
         })
         .catch((error) => {
@@ -87,7 +88,7 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           console.log("User signed In:", user);
-          navigate("/browse");
+         // navigate("/browse");
           // ...
         })
         .catch((error) => {
